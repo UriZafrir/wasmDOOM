@@ -33,6 +33,11 @@ brew install SDL2_image
 brew install SDL2_ttf
 ```
 
+### SDL 2 (Linux)
+
+```
+sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
+```
 ## Compile
 ### Using Docker
 The build script will take care of everything.
@@ -73,4 +78,3 @@ As for understanding how to compile to WASM, the following resources were a big 
 
 The first one is a really good reference on how to get started and how arguments/file access are handled.
 The second one being an excelent reference on how to interact with SDL2 and drawing to the canvas.
-
