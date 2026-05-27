@@ -55,7 +55,7 @@ Then you can host a simple web server to serve the page. I always use a simple p
 # Serving
 ```
 cd public
-python3 http.server (optional: -p <some-custom-port>)
+python3 -m http.server 8080 --bind 0.0.0.0
 ```
 
 Now DOOM should be available on `localhost`
