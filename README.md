@@ -26,6 +26,8 @@ cd emsdk
 source ./emsdk_env.sh
 ```
 
+### install SDL locally only if building not from docker:
+
 ### SDL 2 (MacOS)
 ```
 brew install SDL2
@@ -56,6 +58,13 @@ Then you can host a simple web server to serve the page. I always use a simple p
 ```
 cd public
 python3 -m http.server 8080 --bind 0.0.0.0
+```
+
+# Serving on Docker
+```
+cd public/wasm
+sudo docker build -f Dockerfile.nginx -t wasm-doom .
+sudo docker run -d -p 8080:80 wasm-doom
 ```
 
 Now DOOM should be available on `localhost`
